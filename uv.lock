@@ -280,7 +280,7 @@ dev = [
 requires-dist = [
     { name = "coloredlogs", specifier = "~=15.0" },
     { name = "json-repair", specifier = "~=0.61" },
-    { name = "mite-schema", specifier = ">=1.8.4" },
+    { name = "mite-schema", specifier = ">=1.9.0" },
     { name = "prek", marker = "extra == 'dev'", specifier = ">=0.4.9" },
     { name = "pydantic", specifier = "~=2.13" },
     { name = "pytest", marker = "extra == 'dev'", specifier = "~=9.1" },
