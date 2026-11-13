@@ -61,7 +61,9 @@ def get_taxonomy(taxid: str) -> dict:
         response.raise_for_status()
         taxdata = response.json()
     except Exception as retrieveerror:
-        logger.warning(f"Could not retrieve taxonomy for taxid {taxid}: {retrieveerror!s}")
+        logger.warning(
+            f"Could not retrieve taxonomy for taxid {taxid}: {retrieveerror!s}"
+        )
         return {"organism": FALLBACK} | dict.fromkeys(RANKS, FALLBACK)
 
     found = {}
@@ -78,4 +80,3 @@ def get_taxonomy(taxid: str) -> dict:
         if rank in found:
             taxonomy[rank] = found[rank]
     return taxonomy
-
