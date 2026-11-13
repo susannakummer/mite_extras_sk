@@ -31,6 +31,7 @@ from rdkit.Chem import MolFromSmiles
 from rdkit.Chem.Draw import rdMolDraw2D
 from rdkit.Chem.rdChemReactions import ReactionFromSmarts
 
+from .taxonomy import get_taxonomy
 from .validation_manager import (
     MoleculeValidator,
     ReactionValidator,
